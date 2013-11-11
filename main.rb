@@ -4,18 +4,18 @@ require 'sinatra/activerecord'
 require 'pry'
 
 
-set :database, {adapter: 'postgresql',
-                database: 'api_lab_development',
-                host: 'localhost'}
+# set :database, {adapter: 'postgresql',
+#                 database: 'api_lab_development',
+#                 host: 'localhost'}
 
-class Facility < ActiveRecord::Base
-end
+# class Facility < ActiveRecord::Base
+# end
 
-get '/' do
-  redirect_to '/index.html'	
-end
+# get '/' do
+# end
 
 
-get '/facilities.json' do
-  Facility.all.to_json
-end  
+# get '/facilities.json' do
+#   Facility.first.to_json
+#   binding.pry
+# end  
